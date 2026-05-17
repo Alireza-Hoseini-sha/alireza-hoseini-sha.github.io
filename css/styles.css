@@ -12771,3 +12771,90 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+/* Language switcher */
+#sideNav .lang-switcher {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.lang-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  width: 100%;
+}
+
+.lang-btn {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-weight: 800;
+  font-size: 0.9rem;
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.55);
+  background: transparent;
+  border: none;
+  padding: 0.35rem 0.5rem;
+  cursor: pointer;
+  transition: color 0.15s ease-in-out;
+}
+
+.lang-btn:hover,
+.lang-btn:focus {
+  color: rgba(255, 255, 255, 0.85);
+  outline: none;
+}
+
+.lang-btn.active {
+  color: #fff;
+}
+
+.lang-divider {
+  color: rgba(255, 255, 255, 0.35);
+  font-weight: 300;
+  user-select: none;
+}
+
+/* RTL (Persian) */
+html[dir="rtl"] body {
+  font-family: "Vazirmatn", Muli, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+html[dir="rtl"] .subheading {
+  font-family: "Vazirmatn", "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+@media (min-width: 992px) {
+  html[dir="rtl"] body {
+    padding-left: 0;
+    padding-right: 17rem;
+  }
+
+  html[dir="rtl"] #sideNav {
+    left: auto;
+    right: 0;
+  }
+}
+
+html[dir="rtl"] .social-icons .social-icon {
+  margin-right: 0;
+  margin-left: 1.5rem;
+}
+
+html[dir="rtl"] .social-icons .social-icon:last-child {
+  margin-left: 0;
+}
+
+html[dir="rtl"] .fa-ul {
+  padding-right: 0;
+  margin-right: 2.5rem;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  html[dir="rtl"] .resume-entry.flex-md-row {
+    flex-direction: row-reverse;
+  }
+}
