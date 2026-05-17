@@ -15,6 +15,9 @@
             'nav.interests': 'Interests',
             'nav.awards': 'Awards',
             'lang.label': 'Language',
+            'theme.toggle': 'Toggle dark mode',
+            'theme.dark': 'Dark Mode',
+            'theme.light': 'Light Mode',
             'about.subheading': "Bachelor's in Computer Engineering · DevOps",
             'about.lead':
                 'I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
@@ -83,6 +86,9 @@
             'nav.interests': 'علاقه‌مندی‌ها',
             'nav.awards': 'افتخارات',
             'lang.label': 'زبان',
+            'theme.toggle': 'تغییر حالت تاریک',
+            'theme.dark': 'حالت تاریک',
+            'theme.light': 'حالت روشن',
             'about.subheading': 'کارشناسی مهندسی کامپیوتر · DevOps',
             'about.lead':
                 'در به‌کارگیری چارچوب‌های چابک برای ارائهٔ نمای کلی محکم در سطح بالا تجربه دارم. رویکردهای تکرارشونده به استراتژی سازمانی، تفکر مشارکتی را تقویت می‌کنند تا ارزش پیشنهادی کلی افزایش یابد.',
@@ -201,6 +207,7 @@
         document.documentElement.lang = lang;
         document.documentElement.dir = isFa ? 'rtl' : 'ltr';
 
+        currentLang = lang;
         applyTranslations(lang);
         updateLangButtons(lang);
         localStorage.setItem(STORAGE_KEY, lang);
@@ -214,11 +221,19 @@
         });
     }
 
+    let currentLang = 'en';
+
     window.SiteI18n = {
         init() {
-            const lang = getStoredLang() || 'en';
+            currentLang = getStoredLang() || 'en';
             initLanguageSwitcher();
-            setLanguage(lang);
+            setLanguage(currentLang);
+        },
+        getLang() {
+            return currentLang;
+        },
+        refresh() {
+            applyTranslations(currentLang);
         },
     };
 })();
