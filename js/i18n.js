@@ -6,7 +6,7 @@
 
     const translations = {
         en: {
-            'meta.title': 'Resume - Alireza Hoseini',
+            'meta.title': 'CV - Alireza Hoseini',
             'nav.toggle': 'Toggle navigation',
             'nav.about': 'About',
             'nav.experience': 'Experience',
@@ -16,11 +16,11 @@
             'nav.awards': 'Awards',
             'lang.label': 'Language',
             'theme.toggle': 'Toggle dark mode',
-            'theme.dark': 'Dark Mode',
-            'theme.light': 'Light Mode',
-            'about.subheading': "Bachelor's in Computer Engineering · DevOps",
+            'theme.dark': 'Dark',
+            'theme.light': 'Light',
+            'about.subheading': "Bachelor's in Computer Engineering · Junior DevOps Engineer",
             'about.lead':
-                'I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.',
+                'Computer Engineering graduate with a strong interest in DevOps, Linux, and infrastructure automation. I have built hands-on projects using Linux, Docker, Docker Compose, Git, GitLab CI/CD, Nexus Repository, and Solidity while continuously expanding my practical experience in Kubernetes and Ansible. In addition to DevOps, I have explored Ethereum, smart contract development, and Web3 security through practical labs and personal projects. I enjoy building reliable systems, automating workflows, and continuously learning modern infrastructure technologies. I am currently seeking an opportunity to start my career as a Junior DevOps Engineer and contribute to real-world engineering teams.',
             'experience.title': 'Experience',
             'experience.job1.title': 'Senior Web Developer',
             'experience.job1.company': 'Intelitec Solutions',
@@ -89,9 +89,9 @@
             'theme.toggle': 'تغییر حالت تاریک',
             'theme.dark': 'حالت تاریک',
             'theme.light': 'حالت روشن',
-            'about.subheading': 'کارشناسی مهندسی کامپیوتر · DevOps',
+            'about.subheading': 'کارشناسی مهندسی کامپیوتر · DevOps جونیور',
             'about.lead':
-                'در به‌کارگیری چارچوب‌های چابک برای ارائهٔ نمای کلی محکم در سطح بالا تجربه دارم. رویکردهای تکرارشونده به استراتژی سازمانی، تفکر مشارکتی را تقویت می‌کنند تا ارزش پیشنهادی کلی افزایش یابد.',
+                'فارغ‌التحصیل مهندسی کامپیوتر با علاقه‌مندی جدی به حوزه‌های DevOps، لینوکس و خودکارسازی زیرساخت. تجربه انجام پروژه‌های عملی با استفاده از لینوکس، Docker، Docker Compose، Git، GitLab CI/CD، Nexus Repository و Solidity را دارم و هم‌زمان در حال گسترش تجربه عملی خود در Kubernetes و Ansible هستم.علاوه بر DevOps، از طریق آزمایشگاه‌های عملی و پروژه‌های شخصی، توسعه قراردادهای هوشمند اتریوم و امنیت Web3 را نیز بررسی و تجربه کرده‌ام. به ساخت سیستم‌های پایدار و قابل‌اعتماد، خودکارسازی فرایندها و یادگیری مداوم فناوری‌های مدرن زیرساخت علاقه‌مندم.در حال حاضر به دنبال فرصتی برای آغاز مسیر حرفه‌ای خود به عنوان مهندس DevOps جونیور هستم تا بتوانم در تیم‌های مهندسی واقعی مشارکت کرده و به توسعه و نگهداری زیرساخت‌های عملیاتی کمک کنم.',
             'experience.title': 'تجربه',
             'experience.job1.title': 'توسعه‌دهنده ارشد وب',
             'experience.job1.company': 'Intelitec Solutions',
